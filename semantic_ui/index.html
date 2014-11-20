@@ -1,0 +1,38 @@
+<!DOCTYPE HTML> 
+<html lang="zh-TW">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./reset.css"/>
+		<link rel="stylesheet" href="./packaged/css/semantic.css"/>
+		<title>html-css</title>
+	</head>
+	<body>
+		<div class='a' style='background-color: red;'></div>
+		<div id='b'></div>
+		<i class="heart circular icon link a1" data-content="Hello, I am a pop-up."></i>
+<div class="massive ui button">
+  Follow
+</div>
+	</body>
+</html>
+<script src="./jquery-2.1.1.min.js"></script>
+<script src="./packaged/javascript/semantic.js"></script>
+<style>
+.a{
+	height:100px;
+	width: 100px;
+	background-color: blue;	
+}
+#b{
+	height:100px;
+	width: 100px;
+	background-color: black;	
+}
+</style>
+<script>
+	$('.a1')
+	  .popup({
+	    on: 'click'
+	  })
+	;
+</script>
